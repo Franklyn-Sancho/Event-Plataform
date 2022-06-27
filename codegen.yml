@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Configuração do Codegen
 
-schema: https://api-sa-east-1.graphcms.com/v2/cl4sllbdf2a1g01z1dk49h451/master
+
+schema: import.meta.env.VITE_API_URL
+
 
 documents: './src/graphql/**/*.graphql'
 
