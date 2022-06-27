@@ -1,3 +1,5 @@
+# Query responsável por retornar as lições pela slug
+
 query GetLessonBySlug($slug: String) {
   lesson(where: { slug: $slug }) {
     title

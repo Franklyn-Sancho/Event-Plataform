@@ -3,6 +3,8 @@ import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { Video } from "../components/Video";
 
+
+//renderização de todo o projeto ==> /App
 export function Event() {
 
   const {slug} = useParams<{slug: string}> ()

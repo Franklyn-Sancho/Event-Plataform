@@ -1,3 +1,5 @@
+# Configuração do Codegen
+
 schema: https://api-sa-east-1.graphcms.com/v2/cl4sllbdf2a1g01z1dk49h451/master
 
 documents: './src/graphql/**/*.graphql'

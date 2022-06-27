@@ -3,15 +3,20 @@ import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
-
+//renderização da página de inscritos
 export function Subscribe() {
   const navigate = useNavigate();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
+  /**
+   * useCreateSubscriberMutation => propriedades do GraphCMS
+   * Endereço: '../graphql/mutations/create-subscriber-mutation.graphql'
+   */
   const [createSubscriber, {loading}] = useCreateSubscriberMutation()
 
+  //Função responsável pela criação de inscritos no GraphCMS
   async function handleSubscribe(event: FormEvent) {
     event.preventDefault();
 

@@ -27,12 +27,19 @@ interface VideoProps {
 }
 
 export function Video(props: VideoProps) {
+
+  /**
+   * ==> As propriedades do componente vídeo, já está em nossa GraphQL (GraphCMS)
+   * ==> endereço: '../graphql/queries/get-lesson-by-slug-query.graphql'
+   * */ 
+
   const { data } = useGetLessonBySlugQuery({
     variables: {
       slug: props.lessonSlug,
     },
   });
 
+  //Enquanto o vídeo não for carregado, teremos uma página de carregamento
   if (!data || !data.lesson) {
     return (
       <div className="flex-1">

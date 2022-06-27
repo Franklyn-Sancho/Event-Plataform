@@ -1,9 +1,13 @@
 import { useGetLessonsQuery } from "../graphql/generated";
 import { Lesson } from "./Lesson";
 
+/**
+ * => A interface com as propriedades da sidebar já está na GraphCMS. 
+ * => Podemos ver isso em '../graphql/queries/get-lessons-query.graphql'  
+ */ 
 
 export function Sidebar() {
-  const { data } = useGetLessonsQuery()
+  const { data } = useGetLessonsQuery() //GraphCMS
 
   return (
     <aside className="w-[348px] bg-gray-700 p-6 border-l border-gray-600">

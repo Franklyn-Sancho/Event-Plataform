@@ -1,3 +1,7 @@
+# Mutation responsável pela criação de inscritos na aplicação 
+
+# Query => Leitura / Mutation => modificação
+
 mutation CreateSubscriber($name: String!, $email: String!) {
   createSubscriber(data: { name: $name, email: $email }) {
     id

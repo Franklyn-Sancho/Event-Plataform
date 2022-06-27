@@ -1,3 +1,5 @@
+# Query responsável por retornar todas as lições na Sidebar
+
 query GetLessons {
     lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
       id
